@@ -110,10 +110,10 @@ def append_to_csv(json_response, fileName):
 #Inputs for the request
 bearer_token = auth()
 headers = create_headers(bearer_token)
-keyword = "elden ring lang:en"
-start_time = "2022-03-02T01:04:22.000Z"
-end_time = "2022-03-06T01:04:22.000Z"
-max_results = 15
+keyword = '"I dont know" lang:en -is:retweet'
+start_time = "2022-03-23T02:00:13.000Z"
+end_time = "2022-03-26T01:50:13.000Z"
+max_results = 50
 
 url = create_url(keyword, start_time,end_time, max_results)
 json_response = connect_to_endpoint(url[0], headers, url[1])
